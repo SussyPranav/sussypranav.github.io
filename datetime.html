@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    
+    <font size="+4"> Current time is: <spam id="time looooooool"></spam> </font>
+    <script>
+    setInterval(() => {
+    
+
+        a = new Date();
+        
+        let date = a.toLocaleDateString();
+        let time = a.getHours() + ":" + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time looooooool').innerHTML = time + ' on ' + date;
+        
+        
+        
+        
+        
+        }, 1000); </script>
+</body>
+</html>
+
+
+<font max 4></font>
+
+
+ 
