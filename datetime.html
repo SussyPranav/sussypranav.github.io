@@ -1,14 +1,15 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date and Time</title>
+    <title>Date and Time by Pranav</title>
+    <link rel="stylesheet" href="datetime.css" 
 </head>
-<body>
-    
-    <font size="+4"> Current time is: <spam id="time looooooool"></spam> </font>
-    <script>
+<script>
     setInterval(() => {
     
 
@@ -16,18 +17,27 @@
         
         let date = a.toLocaleDateString();
         let time = a.getHours() + ":" + a.getMinutes() + ':' + a.getSeconds();
-        document.getElementById('time looooooool').innerHTML = time + ' on ' + date;
+        document.getElementById('date').innerHTML = date;
+        document.getElementById('time').innerHTML = time;
         
         
         
         
         
         }, 1000); </script>
+<body>
+    <div id="clock">
+
+        <p class="date">
+            <span id="date"></span>
+        </p>
+        <p class="time">
+            <span id="time"></span>
+        </p>
+        <p class="text">SussyPranav</p>
+    </div>
 </body>
 </html>
-
-
-<font max 4></font>
 
 
  
