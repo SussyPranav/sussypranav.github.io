@@ -1,0 +1,227 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Nougat-ExtraBlack.ttf);
+  }
+*{  font-family: myFirstFont;    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* Set background image */
+    background-image: url('./horse-2255876_1920.jpg');
+    
+    /* Specify background size to cover the entire viewport */
+    background-size: cover;
+    
+    /* Prevent the background image from repeating */
+    background-repeat: no-repeat;
+    
+    /* Center the background image */
+    background-position: center center;
+
+    /* Set a fixed background attachment */
+    background-attachment: fixed;
+
+    /* Set a background color as a fallback */
+    background-color: #131212;
+    
+    /* Adjust other styles as needed */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    color: #ffffff;
+    margin: 100px auto 0;
+    padding: 40px 35px ;
+    text-align: center;
+/* From https://css.glass */
+background: rgba(249, 150, 82, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    
+    
+
+}
+
+
+
+.qr-header h1{
+  font-size: 26px;
+  text-align: center;
+  margin-top: 24px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px black;
+
+}
+.text{
+  margin-block: 12px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 46px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #efe447, #FF9A5A);
+  border: 0;
+  margin: 14px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.qr-body{
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+.text input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+
+  
+
+}
+.qr-header select{
+  
+  height: 40px;
+    width: 1225px;
+    display: flex;
+    padding-left: 21px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 46px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid transparent;
+    color: white;
+    -webkit-text-stroke: .9px black;
+    
+
+}
+
+.qr-header div{
+  display: flex;
+  justify-content: right;
+}
+.qr-footer{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.qr-footer a{
+
+  padding: 14px 36px;
+/* From https://css.glass */
+background: rgba(255, 195, 0, 0.36);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 195, 0, 0.4);
+margin-inline: 2px;
+color: white;
+text-decoration:none;
+font-size: 20px;
+-webkit-text-stroke: .5px black;
+
+
+
+
+
+
+  
+
+
+
+}
+
+
+
+.qr-body img{
+  max-width: 100%;
+  max-height: 100%;
+  margin-block: 10%;
+  padding: 20px;
+  border: 0.5px solid rgb(255, 191, 0);
+  border-radius: 16px;
+
+}
+
+@media screen and (max-width:457px) {
+  .card{
+    width: 80%;
+  }
+  .qr-footer a{
+    padding: 12px;
+    font-size: 15px;
+  }
+  
+}
