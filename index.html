@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brief description of your site">
+    <meta property="og:title" content="Pranav Singh">
+    <meta property="og:description" content="Nothing just random website made by Pranav Singh.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yt3.googleusercontent.com/zKJTedx893RTzDAl7imNWfMMDXANcus7rY02za86zaPGfxH1OyuZEy20swQRfWLXriL_X3iLng=s160-c-k-c0x00ffffff-no-rj">
+    <meta property="og:url" content="https://sussypranav.github.io/">
+    <meta name="twitter:title" content="Pranav Singh">
+    <meta name="twitter:card" content="yo">
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <script src="assets\js\script.js"></script>
+    <script src="assets\js\activityFetcher.js"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+
+
+    <link rel="icon"
+        href="https://yt3.googleusercontent.com/zKJTedx893RTzDAl7imNWfMMDXANcus7rY02za86zaPGfxH1OyuZEy20swQRfWLXriL_X3iLng=s160-c-k-c0x00ffffff-no-rj"
+        type="image/x-icon">
+    <title>Pranav Singh </title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="actinfo">
+            <div class="popmain">
+                <img src="https://no-cdn.shortpixel.ai/client/to_avif,q_lossy,ret_wait/https://shortpixel.com/blog/wp-content/uploads/2023/12/nyan-cat.gif"
+                    id="plswait" />
+                <span class="nameofactivity" id="idkk">Please wait...</span>
+            </div>
+            <span class="material-symbols-outlined" id="cross1">close</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="toggler" id="toggler" onclick="toggleSidebar()">
+            <img src="assets\sidebar\menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="T">
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="toggler" id="toggler" onclick="toggleSidebar()">
+                <img src="assets\sidebar\menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="T">
+            </div>
+
+            <ul>
+                <li><button class="bn632-hover bn25" onClick="toHome()">HOME</button></li>
+                <li><button class="bn632-hover bn25" onClick="toProjects()">PROJECTS</button></li>
+                <li><button class="bn632-hover bn25" onClick="toSocial()">SOCIAL</button></li>
+                <li><button class="bn632-hover bn25" onClick="toAbout()">PAGE INFO</button></li>
+
+                <!-- <li><a href="https://www.example.com">Projects</a></li>
+
+                <li><a href="https://www.example.com">Socials</a></li>
+                <li><a href="https://www.example.com">Page Info</a></li> -->
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <!-- <div class="alert" id="alertBox">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong>Alert!</strong> This is a simple alert box.
+            </div> -->
+            <div class="card" id="card">
+                <div class="photo">
+                    <img class="card-photo" src="assets\main\card\img\skin_render.png" alt="">
+                </div>
+
+                <div class="activity" id="activity">
+
+
+                    <h1>Activity</h1>
+                    <div class="act-img">
+                        <img src="assets\main\card\img\skin_render.png" alt="t">
+                        <div class="act-text"><Strong>I'm Currently Doing Nothing (Offline) </Strong></span></div><span>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div id="Home" class="selectedContent active">
+                <h1>Pranav Singh</h1>
+                <p>I'm Pranav Singh, a student and a passionate self-taught programmer. My coding journey has led me to
+                    become proficient in key languages such as Basic HTML, Basic Python, Basic JavaScript, and Basic
+                    CSS. As a gamer, I've discovered the synergy between problem-solving and creativity, inspiring me to
+                    explore game development. Currently, I'm focusing on mastering JavaScript, with its dynamic web
+                    capabilities at the forefront of my learning journey.
+
+                    In this ever-evolving tech landscape, I'm driven by a relentless curiosity and a commitment to
+                    innovation. I aim not only to learn but to create and positively impact the world with my
+                    programming skills. The road ahead is filled with exciting challenges, and I look forward to
+                    embracing them as I continue to grow and evolve in the realms of programming and technology.</p>
+            </div>
+            <div id="Projects" class="selectedContent">
+                <h1>Projects</h1>
+                <div class="container-project">
+                    <div class="img-project">
+                        <img src="assets\main\projects\cal_example.png" alt=""
+                            onclick="window.open('https://sussypranav.github.io/projects/calculator.html', '_blank')">
+                        <span class="project-text">
+                            <h2>Calculator</h2>
+                    </div>
+                    <div class="img-project">
+                        <img src="assets\main\projects\clock_example.png" alt=""
+                            onclick="window.open('https://sussypranav.github.io/projects/clock.html', '_blank')"> <span
+                            class="project-text">
+                            <h2>Digital Clock</h2>
+                    </div>
+                    <div class="img-project">
+                        <img src="assets\main\projects\weather_example.png" alt=""
+                            onclick="window.open('https://sussypranav.github.io/projects/weather.html', '_blank')">
+                        <span class="project-text">
+                            <h2>Weather</h2>
+                    </div>
+                    <div class="img-project">
+                        <img src="assets\main\projects\QR_example.png" alt=""
+                            onclick="window.open('https://sussypranav.github.io/projects/QR.html', '_blank')"> <span
+                            class="project-text">
+                            <h2>QR Maker</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="Socials" class="selectedContent">
+                <h1>Socials</h1>
+                <div class="container-social">
+                    <div class="img-social" onclick="window.open('https://github.com/SussyPranav', '_blank')">
+                        <img src="assets/main/socials/github.png" alt="GitHub">
+                        <h2 class="social-text">GitHub</h2>
+                    </div>
+
+                    <div class="img-social" onclick="window.open('https://youtube.com/@SussyPranav', '_blank')">
+                        <img src="assets/main/socials/youtube.png" alt="YouTube">
+                        <h2 class="social-text">YouTube</h2>
+                    </div>
+
+                    <div class="img-social" onclick="window.open('https://x.com/sussypranav', '_blank')">
+                        <img src="assets/main/socials/x.png" alt="X">
+                        <h2 class="social-text">X</h2>
+                    </div>
+
+                    <div class="img-social" onclick="window.open('https://instagram.com/sussypranavlol', '_blank')">
+                        <img src="assets/main/socials/instagram.png" alt="Instagram">
+                        <h2 class="social-text">Instagram</h2>
+                    </div>
+
+                    <div class="img-social" onclick="window.open('mailto:pranavsinghh11@gmail.com', '_blank')">
+                        <img src="assets/main/socials/gmail.png" alt="Email">
+                        <h2 class="social-text">Email</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="About" class="selectedContent">
+                <h1>Information About This Page</h1>
+                <p>This website is <strong>COMPLETELY</strong> made by me, Pranav Singh.
+                    I’ve spent a lot of time and effort putting this page together, and I’m really happy to share it
+                    with you. Making a website isn’t always easy, especially if you want it to look nice and work well.
+                    In today’s world, where the internet is full of helpful tools and guides, it would be silly not to
+                    use them. So of course, I used many online resources to help me learn, fix problems, and improve
+                    this website.
+
+                    From articles to different kind of tools, I found a lot of useful information online that
+                    made this project possible. I truly appreciate the work of all the people who share their knowledge
+                    on the internet. Without them, this page wouldn’t be what it is today.
+
+                    You can find a list of all the resources I used below. I’ve included them to give credit where it’s
+                    due—and in case you’re interested in learning or building something similar yourself!
+                </p>
+                <h2>Resources Used</h2>
+                <ul>
+                    <li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a> - For CSS Animations, some javascript
+                        stuff and bug fixes.</li>
+                    <li><a href="https://cssbuttons.app/buttons/25" target="_blank">Css Buttons</a> - The buttons
+                        you see on sidebars are from here</li>
+                    <li><a href="https://lanyard.eggsy.xyz/" target="_blank">lanyard</a> - For fetching current
+                        activity from <a href="https://discord.com/">Discord</a>.</a></li>
+                    <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - For web fonts used in the
+                        design.</li>
+
+                    <h2>Found any bug?</h2>
+                    <p>If you find any bug or have any suggestions, please feel free to contact me via
+                        Discord: <a href="https://discord.gg/SNbGv79m">https://discord.gg/SNbGv79m</a></p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
