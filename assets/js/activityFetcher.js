@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         statusText = `Playing ${activity.name}`;
                         noActivityDiv.remove();
 
-                        imageUrl = `https://img.freepik.com/free-vector/joystick-game-sport-technology_138676-2045.jpg`; // Default image for non-Spotify activity
+                        imageUrl = `https://sussypranav.is-a.dev/assets/main/card/img/online.png`; // Default image for non-Spotify activity
 
                         if (activity.name === "Visual Studio Code") {
                             imageUrl = `https://cdn.discordapp.com/app-assets/${activity.application_id}/${activity.assets.large_image}.png`;
