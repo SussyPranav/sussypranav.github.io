@@ -3,7 +3,7 @@ function createAlertBox(x) {
     alertBox.className = 'alert';
     alertBox.innerHTML = `
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <strong>Alert!</strong> ${x}
+        <strong>Hey!</strong> ${x}
     `;
 
     const currentDiv = document.getElementById("content");
