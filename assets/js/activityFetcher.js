@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch(`https://api.lanyard.rest/v1/users/${userId}`);
             const data = await response.json();
-            //console.log("Fetched data:", data);  // Log the full response for debugging
+            //console.log("Fetched data:", data);  // test
 
             if (!data.success) {
                 return;
