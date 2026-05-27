@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const userId = "1379146899520618638"; // Your Discord user ID
+    const userId = "1379146899520618638"; 
     const activityContainer = document.querySelector(".activity"); // The div where activities will be appended
 
     let currentInterval = null; // Store the interval ID to clear it when needed
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (activities.length === 0) {
                 const noActivityDiv = document.createElement("div");
-                noActivityDiv.textContent = "I'm Currently Doing nothing (Offline)";
+                noActivityDiv.textContent = "(Offline)";
                 activityContainer.appendChild(noActivityDiv);
             }
             //console.log("Number of activities:", activities.length);  // Log the number of activities
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Ignore custom status (type === 4)
                 if (activity.type === 4) {
                     noActivityDiv.className = "nothing";
-                    noActivityDiv.textContent = "I'm Currently Doing Nothing (Online)";
+                    noActivityDiv.textContent = "(Online)";
                     activityContainer.appendChild(noActivityDiv);
                     return;
                 }
